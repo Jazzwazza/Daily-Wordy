@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Memory Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Word Memory</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wordsearch.html">Word Search</a></li>
+                <li><a href="hangman.html">Hangman</a></li>
+                <li><a href="wordmemory.html">Word Memory</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="game-container">
+            <div id="memory-grid"></div>
+            <div id="controls">
+                <div id="timer">Time: 0s</div>
+                <div id="score">Score: 0</div>
+                <button id="auto-complete">Auto Complete</button>
+            </div>
+        </div>
+    </main>
+    <div id="overlay" class="hidden">
+        <div id="popup">
+            <h2 id="popup-title"></h2>
+            <p id="completion-time"></p>
+            <p id="final-score"></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    <script src="js/wordmemory.js"></script>
+</body>
+</html>

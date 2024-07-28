@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Hangman</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wordsearch.html">Word Search</a></li>
+                <li><a href="hangman.html">Hangman</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="hangman-container">
+            <div id="phrase-display"></div>
+            <div id="clue-display"></div>
+            <div id="attempts-display">
+                <span>Attempts left: </span>
+                <div id="attempt-icons"></div>
+            </div>
+            <div id="keyboard"></div>
+            <div id="controls">
+                <button id="hint">Use Hint</button>
+                <span id="hint-count">Hints: 3</span>
+                <div id="timer">Time: 0s</div>
+                <button id="auto-complete">Auto Complete</button>
+            </div>
+        </div>
+    </main>
+    <div id="overlay" class="hidden">
+        <div id="popup">
+            <h2 id="popup-title"></h2>
+            <p id="completion-time"></p>
+            <p id="score"></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    <script src="js/hangman.js"></script>
+</body>
+</html>

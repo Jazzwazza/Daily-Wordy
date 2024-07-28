@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Search</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Word Search</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wordsearch.html">Word Search</a></li>
+                <li><a href="hangman.html">Hangman</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="puzzle-container">
+            <div id="word-grid"></div>
+            <div id="word-list"></div>
+        </div>
+        <div id="controls">
+            <button id="hint">Use Hint</button>
+            <span id="hint-count">Hints: 3</span>
+            <div id="timer">Time: 0s</div>
+            <button id="auto-complete">Auto Complete</button>
+        </div>
+    </main>
+    <div id="overlay" class="hidden">
+        <div id="popup">
+            <h2 id="popup-title"></h2>
+            <p id="completion-time"></p>
+            <p id="score"></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    <script src="js/wordsearch.js"></script>
+</body>
+</html>
